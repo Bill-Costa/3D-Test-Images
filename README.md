@@ -5,8 +5,8 @@
 
 # 3D Test Images #
 
-The goal of this project is to provide a set of stereoscopic 3D (s3D)
-images to aid in the testing and evaluation of stereographic digital
+The goal of this project is to provide a set of stereographic 3D (s3D)
+images to aid in the testing and evaluation of stereoscopic digital
 displays.  See this project's
 [wiki](https://github.com/Bill-Costa/3D-Test-Images/wiki) for more
 background information and details.
@@ -16,48 +16,29 @@ background information and details.
 Provided here are a set of JPEG test images in a variety of sizes and
 formats most commonly used for s3D displays.  These include:
 
-- A test to evaluate crosstalk (ghosting) issues.
+- A test to evaluate crosstalk (ghosting) issues and determine the
+  optimal viewing distance and angles.
 
-- A test illustrating the concept of the
+- A test that confirms the correct assignment of the left and right
+ images and illustrating relative depth and the concept of the
  [stereo window](https://en.wikipedia.org/wiki/Stereo_window#Stereo_window).
 
-- Tests for discovering the optimum image size for a given
+- Tests for determining the optimum digital image sizes for a given
   device and software.
 
 - Sample s3D images.
 
-- `extinction-red-cyan-*` : For multiplexed displays, such as 3D TVs
-  and autostereoscopic (glasses free) displays, this test reveals the
-  level of crosstalk (ghosting) between the left and right images.  In
-  particular, this test is valuable in assessing the uniformity and
-  alignment of the
-  [FPR polarizer](https://en.wikipedia.org/wiki/Film-type_patterned_retarder)
-  commonly used on passive 3D TVs.
-
-  **USAGE:** For 3D TVs, this test requires wearing the appropriate 3D
-  glasses for your set.  while wearing the required 3D glasses, view
-  the image with only one eye at a time.  You should see a uniform
-  color for each eye.
-
-- `depth-black-white-*` : This test image 
-
 ## Getting Started ##
 
-The images provided are designed to be downloaded to your s3D viewing
-device and viewed as you would any stereoscopic image on that device.
-No other software is required.  The images have been crafted to allow
-you to evaluate aspects of your viewing device just by observation.
-In particular, the resolution test will allow you to evaluate how well
-your device can render image resolutions other than the native display
-size.  Note that the image quality can also be dependant upon the
-particular application that is displaying the image or the input
-source.
-
-You do not need to download all of the images, only those contained
-within the directory that matches the stereographic format appropriate
-for your device.  Here are the currently supplied formats.  If your
-device requires a format not listed here, please
-[file an issue](https://github.com/Bill-Costa/3D-Test-Images/issues).
+The images provided here are designed to be downloaded to your s3D
+viewing device and viewed as you would any stereographic image on that
+device.  No other software is required.  The images have been crafted
+to allow you to evaluate aspects of your viewing device just by
+observation.  In particular, the resolution tests will allow you to
+evaluate how well your device and viewer application(s) can render
+image resolutions other than the native display size.  ~~Note that for
+any given stereoscopic display, it is possible for the image quality
+to vary from application to application or given input source.~~
 
 | Directory | Description    | Notes                                        |
 |----:|:---------------------|:----------------------------------------------|
@@ -69,9 +50,20 @@ device requires a format not listed here, please
 | AB  | Above/Below          | above-below images; left on top               |
 | ABQ | Above/Below sQuashed | half height above/below images                |
 
-Please see the
-[wiki](https://github.com/Bill-Costa/3D-Test-Images/wiki) for more
-information and illustrations of these formats.
+<CENTER>
+The [wiki](https://github.com/Bill-Costa/3D-Test-Images/wiki)
+describes each format in detail and lists popular devices that use
+them.
+</CENTER>
+
+You do not need to download all of the images, only those contained
+within the directory that matches the stereoscopic format appropriate
+for your device.  See the
+[wiki](https://github.com/Bill-Costa/3D-Test-Images/wiki) if you need
+help determining the correct format.  Note that not all possible s3D
+formats are currently provided, only the most popular ones commonly
+found.  If your device requires a format not listed here, please
+[file an issue](https://github.com/Bill-Costa/3D-Test-Images/issues).
 
 ### Installation/Dependencies
 
@@ -85,6 +77,22 @@ Provide clear examples of how the project may be used. For large
 projects with external documentation, provide a few examples and link
 to the full docs here.
 
+- `extinction-red-cyan-*` : For multiplexed displays, such as 3D TVs
+    and autostereoscopic (glasses free) displays, this test reveals
+    the level of crosstalk (ghosting) between the left and right
+    images.  In particular, this test is valuable in assessing the
+    uniformity and alignment of the
+    [FPR polarizer](https://en.wikipedia.org/wiki/Film-type_patterned_retarder)
+    commonly used on passive 3D TVs.
+
+    **USAGE:** For 3D TVs, this test requires wearing the appropriate
+    3D glasses for your set.  while wearing the required 3D glasses,
+    view the image with only one eye at a time.  You should see a
+    uniform color for each eye.
+
+- `depth-black-white-*` : This test image 
+
+
 ### Build/Deployment
 
 If the user will be building or deploying the project, add any useful
@@ -96,7 +104,7 @@ If you have questions or need help in using these resources, please
 [file an issue](https://github.com/Bill-Costa/3D-Test-Images/issues). We
 will do our best to respond to all issues as time permits.
 
-For help in general regarding the creation and viewing of stereoscopic
+For help in general regarding the creation and viewing of stereographic
 3D images, we highly recommend the
 [Photo-3D](https://groups.yahoo.com/neo/groups/photo-3d/info) on-line
 forum.
@@ -104,8 +112,9 @@ forum.
 ## Errors and Bugs
 
 If something is not behaving intuitively, it is a bug and should be
-reported. Report it here by creating an issue:
-https://github.com/datamade/your-repo-here/issues
+reported.  Report it here by creating an issue:
+
+[https://github.com/Bill-Costa/3D-Test-Images/issues](https://github.com/Bill-Costa/3D-Test-Images/issues)
 
 Help us fix the problem as quickly as possible by following
 [Mozilla's guidelines for reporting bugs.](https://developer.mozilla.org/en-US/docs/Mozilla/QA/Bug_writing_guidelines#General_Outline_of_a_Bug_Report)
@@ -134,7 +143,7 @@ orientation. [Code of Conduct FAQ](https://www.contributor-covenant.org/faq)
 
 ## Credits ##
 
-Thanks to the following folks for providing sharing their knowledge
+Thanks to the following folks for generously sharing their knowledge
 and ideas on this subject, and in some cases releasing their own work
 to the Creative Commons community which allowed us to use it here.
 
