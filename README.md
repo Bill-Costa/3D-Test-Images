@@ -36,9 +36,7 @@ device.  No other software is required.  The images have been crafted
 to allow you to evaluate aspects of your viewing device just by
 observation.  In particular, the resolution tests will allow you to
 evaluate how well your device and viewer application(s) can render
-image resolutions other than the native display size.  ~~Note that for
-any given stereoscopic display, it is possible for the image quality
-to vary from application to application or given input source.~~
+image resolutions other than the native display size.
 
 | Directory | Description    | Notes                                        |
 |----:|:---------------------|:----------------------------------------------|
@@ -65,33 +63,54 @@ formats are currently provided, only the most popular ones commonly
 found.  If your device requires a format not listed here, please
 [file an issue](https://github.com/Bill-Costa/3D-Test-Images/issues).
 
-### Installation/Dependencies
+### Usage ###
 
-How does a user get up and running with your project? What
-dependencies does the project have? Aim to describe these in clear and
-simple steps. Provide external links
+For each of the 3D format types listed above, one or more of the
+following test files are provided.
 
-### Usage
+- `extinction-red-cyan-*` : This test is designed to evaluate the
+    degree of cross-talk for multiplexed displays, such as
+    [3D TVs](https://en.wikipedia.org/wiki/3d_tv) and
+    [autostereoscopic](https://en.wikipedia.org/wiki/Autostereoscopy)
+    (glasses free) screens found on 3D smart phones and tablets.
+    Use cases include:
 
-Provide clear examples of how the project may be used. For large
-projects with external documentation, provide a few examples and link
-to the full docs here.
+    a. Finding the 3D *sweet spot* of the display which can be
+    dependant upon the viewing angle and distance.
 
-- `extinction-red-cyan-*` : For multiplexed displays, such as 3D TVs
-    and autostereoscopic (glasses free) displays, this test reveals
-    the level of crosstalk (ghosting) between the left and right
-    images.  In particular, this test is valuable in assessing the
-    uniformity and alignment of the
-    [FPR polarizer](https://en.wikipedia.org/wiki/Film-type_patterned_retarder)
-    commonly used on passive 3D TVs.
+    b. Evaluating the effectiveness of different brands and types of
+    polarized 3D glasses.
 
-    **USAGE:** For 3D TVs, this test requires wearing the appropriate
-    3D glasses for your set.  while wearing the required 3D glasses,
-    view the image with only one eye at a time.  You should see a
-    uniform color for each eye.
+    c. Evaluating the overall effectiveness of the display to produce
+    ghost-free images caused by crosstalk.
 
-- `depth-black-white-*` : This test image 
+    The test requires wearing the appropriate 3D glasses if required
+    by your device.  View the image with just your left eye, and then
+    just your right.  The goal is to see a smooth single uninterrupted
+    solid color across the entire screen for each eye.
 
+- `depth-black-white-*` : This test uses an abstract image to clearly
+    illustrate the stereoscopic effect created by the device.  Use cases
+    include:
+
+    a. Illustrating the concept of the
+    [stereo window](https://en.wikipedia.org/wiki/Stereoscopy#Stereo_window).
+
+    b. Verify the correct assignment of the left and right image
+    'channels'.
+
+    When viewed in 3D, the center square should appear to be in front
+    of the stereo window.  The dashed lines and quad-square should
+    appear to be *at* the window, which will appear to be at the
+    surface of the display.  You should also be able to confirm that
+    the text `LEFT` in the lower left hand corner can only be seen by
+    your left eye, and vice versa for the `RIGHT` text in the lower
+    right.
+
+- `usaf-1951-*` : These test consists of a 2D resolution chart
+    rendered at a variety of common raster digital image resolutions.
+
+    a. 
 
 ### Build/Deployment
 

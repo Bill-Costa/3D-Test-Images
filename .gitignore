@@ -1,6 +1,8 @@
+# 3D Test Images Project specific ignore files.
+
 .DS_Store
-_Future-Sources/
-_Other
-_Sources
-_TODO.md
-README.html
+_*
+*.html
+*~
+
+# EOF 3D-Test-Images/.gitignore
