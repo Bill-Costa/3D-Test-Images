@@ -14,19 +14,17 @@ background information and details.
 ## Features ##
 
 Provided here are a set of JPEG test images in a variety of sizes and
-formats most commonly used for s3D displays.  These include:
+formats most commonly used for digital s3D displays.  These include:
 
-- A test to evaluate crosstalk (ghosting) issues and determine the
+- A test to evaluate crosstalk (ghosting) issues and to determine the
   optimal viewing distance and angles.
 
 - A test that confirms the correct assignment of the left and right
- images and illustrating relative depth and the concept of the
+ images and illustrating relative depth with respect to the
  [stereo window](https://en.wikipedia.org/wiki/Stereo_window#Stereo_window).
 
 - Tests for determining the optimum digital image sizes for a given
-  device and software.
-
-- Sample s3D images.
+  hardware device and software combination.
 
 ## Getting Started ##
 
@@ -36,7 +34,7 @@ device.  No other software is required.  The images have been crafted
 to allow you to evaluate aspects of your viewing device just by
 observation.  In particular, the resolution tests will allow you to
 evaluate how well your device and viewer application(s) can render
-image resolutions other than the native display size.
+images in sizes other than the native (hardware) display size.
 
 | Directory | Description    | Notes                                        |
 |----:|:---------------------|:----------------------------------------------|
@@ -48,19 +46,23 @@ image resolutions other than the native display size.
 | AB  | Above/Below          | above-below images; left on top               |
 | ABQ | Above/Below sQuashed | half height above/below images                |
 
-<CENTER>
-The [wiki](https://github.com/Bill-Costa/3D-Test-Images/wiki)
-describes each format in detail and lists popular devices that use
-them.
-</CENTER>
+<CENTER> The [wiki](https://github.com/Bill-Costa/3D-Test-Images/wiki)
+describes each format, and its application, in detail.</CENTER>
 
-You do not need to download all of the images, only those contained
-within the directory that matches the stereoscopic format appropriate
-for your device.  See the
+You do not need to download all of the images, only those formatted as
+required for your device.  See the
 [wiki](https://github.com/Bill-Costa/3D-Test-Images/wiki) if you need
-help determining the correct format.  Note that not all possible s3D
-formats are currently provided, only the most popular ones commonly
-found.  If your device requires a format not listed here, please
+help determining the correct format.  If you have an application
+designed specifically for viewing stereoscopic images, you should
+probably download at least the `MPO` format tests.
+
+To download the images from GitHub, select a folder from the list, and
+then within the folder's contents list, click on each image to display
+it.  Use the `Download` button provided to fetch your own local copy.
+
+Note that not all possible s3D formats are currently provided, only
+the most popular ones commonly found.  If your device requires a
+format not listed here, please
 [file an issue](https://github.com/Bill-Costa/3D-Test-Images/issues).
 
 ### Usage ###
@@ -108,14 +110,37 @@ following test files are provided.
     right.
 
 - `usaf-1951-*` : These test consists of a 2D resolution chart
-    rendered at a variety of common raster digital image resolutions.
+    rendered at a variety of common raster digital
+    [image sizes](https://en.wikipedia.org/wiki/Quad_HD).
 
-    a. 
+    a. 0720 pixels high for HD displays
+    b. 1080 pixels high for Full HD displays
+    c. 1440 pixels high for Quad HD displays
+    d. 2160 pixels for Ultra HD displays
+    e. 2880 pixels for 5K HD displays
+    f. 4320 pixels for 8K HD displays
 
-### Build/Deployment
+    Note that aspect ratio of the test image itself is near square so
+    that it can be used with a viewing device like the
+    [Google Cardboard](https://en.wikipedia.org/wiki/Google_Cardboard)
+    which divides a smart phone's landscape display in half to form
+    the required left/right stereographic image pair.
 
-If the user will be building or deploying the project, add any useful
-guidance.
+    One of the images above should match or closely match your
+    device's native resolution.  However you should examine all of the
+    test sizes to evaluate how well your device and application(s) can
+    upscale and downscale the image.  If you use more than one
+    application to view your stereograpic images, you should test each
+    one against all of the image sizes provided, since how well the
+    scaling is done can be a function of the software being used.
+
+    The goal is to identify which image sizes, if any, are not well
+    rendered on your device, so you can optimize your image library to
+    image sizes that take the best advantage of your display.  Do not
+    assume that higher than native resolutions will necessarily yield
+    well rendered results.  We seen device and software combinations
+    where larger size images actually look less sharp than smaller
+    image sizes.
 
 ## Getting Help ##
 
