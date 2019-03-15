@@ -1,0 +1,18 @@
+360x1   0360
+        0480 11
+        0540  5
+        0600  6
+        0640  5
+360x2   0720    <-- Std HD
+        0750    <-- Apple
+        0768    <-- LG, Nokia, etc.
+        0800 10 <-- tablets
+360x3   1080    <-- Std Full HD
+        1125    <-- Apple
+        1200    <-- Commander 3D
+360x4   1440    <-- Quad HD
+        1536  7 <-- tablets
+360x6   2160    <-- UHDTV-1 (4K UHD), Sony phones
+360x12  4320    <-- UHDTV-2 (8K)
+
+
