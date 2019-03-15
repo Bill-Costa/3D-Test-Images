@@ -8,7 +8,7 @@ This format is designed specifically for storing L/R stereoscopic
 images within a single JPG file, along with stereoscopic specific meta
 data.  While this format has been used as a file format by some
 stereoscopic digital cameras and is recognized by many stereoscopic
-viewing software, in practice it has not been widely adopted in
+viewing programs, in practice it has not been widely adopted in
 comparison to other stereographic file formats.
 
 While the JPS specification provides support, via meta data, for a
