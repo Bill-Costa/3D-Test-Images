@@ -78,7 +78,7 @@ following test files are provided.
     Use cases include:
 
     a. Finding the 3D *sweet spot* of the display which can be
-    dependant upon the viewing angle and distance.
+    dependent upon the viewing angle and distance.
 
     b. Evaluating the effectiveness of different brands and types of
     polarized 3D glasses.
@@ -130,9 +130,12 @@ following test files are provided.
     device's native resolution.  However you should examine all of the
     test sizes to evaluate how well your device and application(s) can
     upscale and downscale the image.  If you use more than one
-    application to view your stereograpic images, you should test each
+    application to view your stereographic images, you should test each
     one against all of the image sizes provided, since how well the
     scaling is done can be a function of the software being used.
+
+    Note that left and right images in these test images are
+    identical, so there will be no observable 3D effect.
 
     The goal is to identify which image sizes, if any, are not well
     rendered on your device, so you can optimize your image library to
@@ -199,7 +202,7 @@ to the Creative Commons community which allowed us to use it here.
 - [Damir Vrancic](http://dsc.ijs.si/damir.vrancic/)
   (a.k.a. `crunchy_3d` on the
   [Photo-3D](https://groups.yahoo.com/neo/groups/photo-3d/info) Yahoo
-  Group) for the inspiration of the elegant cyan/megenta extinction
+  Group) for the inspiration of the elegant cyan/magenta extinction
   test.
 
 - Contributor Code of Conduct text provided by
